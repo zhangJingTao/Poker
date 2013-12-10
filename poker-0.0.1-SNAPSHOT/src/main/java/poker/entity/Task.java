@@ -9,7 +9,7 @@ import org.hibernate.validator.constraints.NotBlank;
 
 //JPA标识
 @Entity
-@Table(name = "Ttask")
+@Table(name = "t_task")
 public class Task extends IdEntity {
 
 	private String title;

@@ -2,15 +2,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
-
 <html>
 <head>
-	<title>main Page</title>
+<title>main Page</title>
+<jsp:include page="/static/include/login_include.jsp"></jsp:include>
 </head>
 
 <body>
 	
-	<div class="container-fluid">
+	<!-- <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span1">
 		</div>
@@ -45,6 +45,6 @@
 			</dl>
 		</div>
 	</div>
-</div>
+</div> -->
 </body>
 </html>

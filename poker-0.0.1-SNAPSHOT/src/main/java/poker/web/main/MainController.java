@@ -27,5 +27,10 @@ public class MainController {
 		return "share/main";
 	} 
 	
+	@RequestMapping(value = "target")
+	public String target() {
+		return "share/targetMain";
+	} 
+	
 	
 }

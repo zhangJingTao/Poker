@@ -99,7 +99,7 @@ public class AccountService {
 	private void entryptPassword(User user) {
 		byte[] salt = Digests.generateSalt(SALT_SIZE);
 		user.setSalt(Encodes.encodeHex(salt));
-
+		
 		byte[] hashPassword = Digests.sha1(user.getPlainPassword().getBytes(), salt, HASH_INTERATIONS);
 		user.setPassword(Encodes.encodeHex(hashPassword));
 	}
@@ -116,5 +116,14 @@ public class AccountService {
 
 	public void setDateProvider(DateProvider dateProvider) {
 		this.dateProvider = dateProvider;
+	}
+	
+	public static void main(String[] args) {
+		byte[] salt = Digests.generateSalt(SALT_SIZE);
+		System.out.println(Encodes.encodeHex(salt));
+		String pass = new String("admin");
+			
+		byte[] hashPassword = Digests.sha1(pass.getBytes(), salt, HASH_INTERATIONS);
+		System.out.println(Encodes.encodeHex(hashPassword));
 	}
 }

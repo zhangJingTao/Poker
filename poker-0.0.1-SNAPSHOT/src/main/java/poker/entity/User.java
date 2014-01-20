@@ -1,5 +1,6 @@
 package poker.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -17,7 +18,9 @@ import com.google.common.collect.ImmutableList;
 
 @Entity
 @Table(name = "t_user")
-public class User extends IdEntity {
+public class User extends IdEntity implements Serializable{
+	private static final long serialVersionUID = -6109590619136943215L;
+	
 	private String loginName;
 	private String name;
 	private String plainPassword;

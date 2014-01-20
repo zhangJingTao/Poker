@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
 import poker.entity.User;
+import poker.redis.RedisDao;
 import poker.service.account.AccountService;
 
 /**
@@ -27,12 +29,10 @@ public class UserAdminController {
 
 	@Autowired
 	private AccountService accountService;
-
 	@RequestMapping(method = RequestMethod.GET)
 	public String list(Model model) {
 		List<User> users = accountService.getAllUser();
 		model.addAttribute("users", users);
-
 		return "account/adminUserList";
 	}
 

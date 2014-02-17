@@ -1,7 +1,7 @@
-drop table Ttask;
-drop table Tuser;
+drop table t_task;
+drop table t_user;
 
-create table Ttask (
+create table t_task (
 	id number(19,0),
 	title varchar2(128) not null,
 	description varchar2(255),
@@ -9,7 +9,7 @@ create table Ttask (
     primary key (id)
 );
 
-create table Tuser (
+create table t_user (
 	id number(19,0),
 	login_name varchar2(64) not null unique,
 	name varchar2(64) not null,

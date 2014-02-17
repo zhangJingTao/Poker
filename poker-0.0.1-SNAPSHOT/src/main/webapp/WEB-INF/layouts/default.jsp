@@ -2,7 +2,6 @@
 <%@ taglib prefix="sitemesh" uri="http://www.opensymphony.com/sitemesh/decorator" %>  
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
-
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
@@ -14,11 +13,6 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <jsp:include page="/static/include/login_include.jsp"></jsp:include>
-<link type="image/x-icon" href="${ctx}/static/images/favicon.ico" rel="shortcut icon">
-<link href="${ctx}/static/jquery-validation/1.10.0/validate.css" type="text/css" rel="stylesheet" />
-<link href="${ctx}/static/styles/default.css" type="text/css" rel="stylesheet" />
-<script src="${ctx}/static/jquery-validation/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
-<script src="${ctx}/static/jquery-validation/1.10.0/messages_bs_zh.js" type="text/javascript"></script>
 
 <sitemesh:head/>
 </head>
@@ -47,9 +41,15 @@
 	<div class="container" style="width: 100%">
 		<%@ include file="/WEB-INF/layouts/header.jsp"%>
 		<div id="content">
+			<shiro:user>
+			<iframe id="mainFrame" name="mainFrame" src="" style="overflow:visible;"
+						scrolling="yes" frameborder="no" width="100%" height="650"></iframe>
+			</shiro:user>
 			<sitemesh:body/>
 		</div>
+		<shiro:user>
 		<%@ include file="/WEB-INF/layouts/footer.jsp"%>
+		</shiro:user>
 	</div>
 </body>
 </html>

@@ -1,15 +1,17 @@
-package poker.functional.gui;
+package poker.gui;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.springside.modules.test.category.Smoke;
+
+import poker.BaseSeleniumTestCase;
 import poker.data.TaskData;
 import poker.entity.Task;
-import poker.functional.BaseSeleniumTestCase;
-import org.springside.modules.test.category.Smoke;
 
 /**
  * 任务管理的功能测试, 测试页面JavaScript及主要用户故事流程.

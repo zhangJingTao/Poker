@@ -1,4 +1,4 @@
-package poker.functional;
+package poker;
 
 import static org.junit.Assert.*;
 

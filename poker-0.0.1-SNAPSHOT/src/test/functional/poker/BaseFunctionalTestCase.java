@@ -1,4 +1,4 @@
-package poker.functional;
+package poker;
 
 import java.net.URL;
 import java.sql.Driver;

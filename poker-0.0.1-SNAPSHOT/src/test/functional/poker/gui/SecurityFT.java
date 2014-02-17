@@ -1,10 +1,12 @@
-package poker.functional.gui;
+package poker.gui;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
-import poker.functional.BaseSeleniumTestCase;
+
+import poker.BaseSeleniumTestCase;
 
 /**
  * 系统安全控制的功能测试, 测试主要用户故事.

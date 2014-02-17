@@ -1,4 +1,4 @@
-package poker.functional;
+package poker;
 
 import org.eclipse.jetty.server.Server;
 import org.springside.modules.test.jetty.JettyFactory;

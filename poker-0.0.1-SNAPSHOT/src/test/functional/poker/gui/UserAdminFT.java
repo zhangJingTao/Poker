@@ -1,6 +1,7 @@
-package poker.functional.gui;
+package poker.gui;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -8,8 +9,9 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import poker.functional.BaseSeleniumTestCase;
 import org.springside.modules.test.category.Smoke;
+
+import poker.BaseSeleniumTestCase;
 
 public class UserAdminFT extends BaseSeleniumTestCase {
 

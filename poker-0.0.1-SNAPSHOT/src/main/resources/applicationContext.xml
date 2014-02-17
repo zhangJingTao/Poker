@@ -28,6 +28,7 @@
 			<props>
 				<!-- 命名规则 My_NAME->MyName -->
 				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
 	</bean>
@@ -57,7 +58,10 @@
 	<!-- production环境 -->
  	<beans profile="production">
  		<context:property-placeholder ignore-unresolvable="true"
-			location="classpath*:/application.properties" />	
+			location="classpath*:/application.properties" />
+			
+ 		<context:property-placeholder ignore-unresolvable="true"
+			location="classpath*:/server.config.properties" />	
 		
 		<!-- 数据源配置, 使用DBCP数据库连接池 -->
 		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -78,6 +82,15 @@
 		
 		<!-- 数据源配置,使用应用服务器的数据库连接池 -->
 		<!--<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/ExampleDB" />-->
+		
+		<!-- Spring Data redis -->
+		<bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="hostName" value="${redis.ip}"/>
+        <property name="port" value="${redis.port}"/>
+		</bean>
+		<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+		        <property name="connectionFactory" ref="jedisConnectionFactory"/>
+		</bean>
 	</beans>
 	
 	<!-- local development环境 -->

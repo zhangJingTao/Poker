@@ -1,6 +1,7 @@
-package poker.functional.rest;
+package poker.rest;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -13,11 +14,12 @@ import org.junit.experimental.categories.Category;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
-import poker.data.TaskData;
-import poker.entity.Task;
-import poker.functional.BaseFunctionalTestCase;
 import org.springside.modules.mapper.JsonMapper;
 import org.springside.modules.test.category.Smoke;
+
+import poker.BaseFunctionalTestCase;
+import poker.data.TaskData;
+import poker.entity.Task;
 
 /**
  * 任务管理的功能测试, 测试页面JavaScript及主要用户故事流程.

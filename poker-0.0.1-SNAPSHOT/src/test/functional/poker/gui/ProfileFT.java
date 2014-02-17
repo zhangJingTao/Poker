@@ -1,10 +1,11 @@
-package poker.functional.gui;
+package poker.gui;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
-import poker.functional.BaseSeleniumTestCase;
+
+import poker.BaseSeleniumTestCase;
 
 public class ProfileFT extends BaseSeleniumTestCase {
 

@@ -9,14 +9,20 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 import poker.entity.User;
+import poker.util.SpringContextHolder;
 
 @Component
 public  class RedisDao {
 	@Autowired
-	private RedisTemplate<Object, Object> template; 
+	private static RedisTemplate<Object, Object> template; 
 	
+	public RedisDao(){
+		if (template==null) {
+			template = SpringContextHolder.getBean(RedisTemplate.class);
+		}
+	}
 	
-	public void putValue(Object key,final Serializable value,Long time){
+	public static void putValue(Object key,final Serializable value,Long time){
 		try {
 			template.opsForValue().set(key, value, time, TimeUnit.HOURS);
 		} catch (Exception e) {
@@ -33,7 +39,7 @@ public  class RedisDao {
 		}
 	}
 	
-	public void testJJJ(){
+	public static void testJJJ(){
 		for (int i = 0; i < 100000; i++) {
 			String key = String.valueOf("testProcess_"+i);
 			User user = new User();

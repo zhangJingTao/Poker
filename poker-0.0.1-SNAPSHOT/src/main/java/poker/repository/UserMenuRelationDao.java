@@ -11,5 +11,5 @@ import poker.entity.UserMenuRelation;
  *
  */
 public interface UserMenuRelationDao extends PagingAndSortingRepository<UserMenuRelation, Long>, JpaSpecificationExecutor<UserMenuRelation> {
-
+	
 }

@@ -42,7 +42,7 @@
 		<%@ include file="/WEB-INF/layouts/header.jsp"%>
 		<div id="content">
 			<shiro:user>
-			<iframe id="mainFrame" name="mainFrame" src="" style="overflow:visible;"
+			<iframe id="mainFrame" name="mainFrame" src="main/target" style="overflow:visible;"
 						scrolling="yes" frameborder="no" width="100%" height="650"></iframe>
 			</shiro:user>
 			<sitemesh:body/>

@@ -20,8 +20,8 @@ public class UserMenuRelation implements java.io.Serializable {
 	// Fields
 
 	private UserMenuRelationId id;
-	private Menu TMenu;
-	private User TUser;
+	private Menu Menu;
+	private User User;
 
 	// Constructors
 
@@ -35,10 +35,10 @@ public class UserMenuRelation implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public UserMenuRelation(UserMenuRelationId id, Menu TMenu, User TUser) {
+	public UserMenuRelation(UserMenuRelationId id, Menu Menu, User User) {
 		this.id = id;
-		this.TMenu = TMenu;
-		this.TUser = TUser;
+		this.Menu = Menu;
+		this.User = User;
 	}
 
 	// Property accessors
@@ -58,21 +58,21 @@ public class UserMenuRelation implements java.io.Serializable {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "mid", insertable = false, updatable = false)
 	public Menu getMenu() {
-		return this.TMenu;
+		return this.Menu;
 	}
 
-	public void setMenu(Menu TMenu) {
-		this.TMenu = TMenu;
+	public void setMenu(Menu Menu) {
+		this.Menu = Menu;
 	}
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "uid", insertable = false, updatable = false)
 	public User getUser() {
-		return this.TUser;
+		return this.User;
 	}
 
-	public void setUser(User TUser) {
-		this.TUser = TUser;
+	public void setUser(User User) {
+		this.User = User;
 	}
 
 }

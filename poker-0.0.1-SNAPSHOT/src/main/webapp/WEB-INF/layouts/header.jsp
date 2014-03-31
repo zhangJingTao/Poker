@@ -16,22 +16,60 @@
                 </li>
                 <li>
                   <a href="javascript:void(0)">
-                    Project
-                    <span class="navbar-unread">1</span>
+                    Web Data Transfer
                   </a>
                   <ul>
-                    <li><a href="javascript:void(0)">Element One</a></li>
-                    <li>
-                      <a href="javascript:void(0)">Sub menu</a>
-                      <ul>
-                        <li><a href="#fakelink">Element One</a></li>
-                        <li><a href="#fakelink">Element Two</a></li>
-                        <li><a href="#fakelink">Element Three</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#fakelink">Element Three</a></li>
+                    <li><a href="data/fastJson" target="mainFrame">Fast Json</a></li>
+                    <li><a href="data/jackson" target="mainFrame">Jackson</a></li>
+                  	<li><a href="data/jsonCompare" target="mainFrame">Performance Compare</a></li>
                   </ul>
                 </li>
+                
+                <li>
+                  <a href="javascript:void(0)">
+                    Web View
+                  </a>
+                  <ul>
+                    <li><a href="view/freemarker" target="mainFrame">FreeMarker</a></li>
+                    <li><a href="view/velocity" target="mainFrame">Velocity</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0)">
+                    Cache
+                  </a>
+                  <ul>
+                    <li><a href="cache/memcached" target="mainFrame">Memcached</a></li>
+                    <li><a href="javascript:void(0)">Redis</a>
+                      <ul>
+                        <li><a href="cache/redis" target="mainFrame">Main</a></li>
+                        <li><a href="cache/jredis" target="mainFrame">Jredis</a></li>
+                        <li><a href="cache/jedis" target="mainFrame">jedis</a></li>
+                     </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    MVC
+                  </a>
+                  <ul>
+                    <li><a href="mvc/django" target="mainFrame">Django</a></li>
+                    <li><a href="mvc/SpringMVC" target="mainFrame">Spring MVC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    SNS
+                  </a>
+                  <ul>
+                    <li><a href="mvc/django" target="mainFrame">Oauth</a></li>
+                    <li><a href="mvc/SpringMVC" target="mainFrame">... MVC</a></li>
+                  </ul>
+                </li>
+                
+                
               </ul>
               
               

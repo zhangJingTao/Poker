@@ -1,5 +1,7 @@
 package poker.init;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -8,8 +10,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
+import poker.constant.RedisConstant;
 import poker.entity.Menu;
+import poker.entity.User;
+import poker.entity.UserMenuRelation;
+import poker.redis.RedisDao;
 import poker.service.menu.MenuService;
+import poker.service.menu.UserMenuRelationService;
+import poker.test.SerializableVO;
+import poker.util.GenerateRandomUtil;
 import poker.util.SpringContextHolder;
 
 @Component
@@ -19,11 +28,17 @@ public class ApplicationInit {
 
 	@Autowired
 	MenuService menuService;
-	
+	@Autowired
+	UserMenuRelationService relationService;
+	RedisDao redisDao = new RedisDao();
+
 	
 	public ApplicationInit(){
 		if (menuService==null) {
 			menuService = SpringContextHolder.getBean(MenuService.class);
+		}
+		if (relationService==null) {
+			relationService = SpringContextHolder.getBean(UserMenuRelationService.class);
 		}
 		log.info("                                 qBMBBBMBMY     ");	
 		log.info("                                8BBBBBOBMBMv    ");
@@ -51,8 +66,38 @@ public class ApplicationInit {
 		log.info("            :r2. rMBGBMGi .7Y, 1i::i   vO0PMNNSXXEqP@Secbone.");
 		log.info("            .i1r. .jkY,    vE. iY....  20Fq0q5X5F1S2F22uuv1M");
 		log.info("start init application redis data");
-		log.info("get enabled menu info");
-		List<Menu> menus = menuService.listAllMenu(false);
-		log.info(menus.size());
+		redisDao.putValue(RedisConstant.TEST_JSON_KEY_LARGE, generateList(1000000));
+		redisDao.putValue(RedisConstant.TEST_JSON_KEY_MEDIUM, generateList(100000));
+		redisDao.putValue(RedisConstant.TEST_JSON_KEY_SMALL, generateList(1000));
+		log.info("finish init application redis data");
+		checkRedisIsOK();
+	}
+	
+	
+	private Serializable generateList(Integer size){
+		List<SerializableVO> result = new ArrayList<SerializableVO>();
+		if (size==0) {
+			return (Serializable) result;
+		}
+		GenerateRandomUtil util = new GenerateRandomUtil();
+		for (int i = 0; i < size; i++) {
+			String generateStr = util.generateRandomChar(10);
+			Long generateLong = util.generateRandomLong(8);
+			Integer generateInteger = util.generateRandomInt(5);
+			Menu menu = new Menu(generateLong, generateLong, generateStr, generateStr, false, generateInteger, generateLong, null, generateLong, generateStr, generateStr);
+			User user = new User();
+			SerializableVO vo = new SerializableVO(util.generateRandomInt(3),util.generateRandomChar(10),util.generateRandomLong(10), menu, user);
+			result.add(vo);
+		}
+		return (Serializable) result;
+	}
+	
+	private void checkRedisIsOK(){
+		try {
+			List<SerializableVO> result = (List<SerializableVO>)redisDao.getValue(RedisConstant.TEST_JSON_KEY_LARGE);
+			log.info(RedisConstant.TEST_JSON_KEY_LARGE+" cases size is:"+result.size());
+			log.info("Redis is Ok!");
+		} catch (Exception e) {
+		}
 	}
 }

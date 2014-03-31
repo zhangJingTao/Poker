@@ -1,6 +1,7 @@
 package poker.service.menu;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +31,9 @@ public class UserMenuRelationService {
 			e.printStackTrace();
 			return -1;
 		}
+	}
+	
+	public List<UserMenuRelation> listAllRelations(){
+		return (List<UserMenuRelation>) dao.findAll();
 	}
 }

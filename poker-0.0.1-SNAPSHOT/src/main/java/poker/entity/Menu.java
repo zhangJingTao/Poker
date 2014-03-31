@@ -3,6 +3,7 @@ package poker.entity;
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +11,8 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.hibernate.validator.constraints.URL;
 
 /**
  * 
@@ -19,7 +22,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "t_menu", catalog = "poker")
 public class Menu implements java.io.Serializable {
-
+	
+	private static final long serialVersionUID = -6109590619136943215L;
 	// Fields
 
 	private Long id;
@@ -33,8 +37,6 @@ public class Menu implements java.io.Serializable {
 	private Long creatorId;
 	private String icon;
 	private String sign;
-	private Set<UserMenuRelation> UserMenuRelation = new HashSet<UserMenuRelation>(
-			0);
 
 	// Constructors
 
@@ -50,7 +52,7 @@ public class Menu implements java.io.Serializable {
 	/** full constructor */
 	public Menu(Long id, Long name, String model, String url, Boolean enabled,
 			Integer order, Long PId, Timestamp creatTime, Long creatorId,
-			String icon, String sign, Set<UserMenuRelation> UserMenuRelation) {
+			String icon, String sign) {
 		this.id = id;
 		this.name = name;
 		this.model = model;
@@ -62,7 +64,6 @@ public class Menu implements java.io.Serializable {
 		this.creatorId = creatorId;
 		this.icon = icon;
 		this.sign = sign;
-		this.UserMenuRelation = UserMenuRelation;
 	}
 
 	// Property accessors
@@ -164,15 +165,6 @@ public class Menu implements java.io.Serializable {
 
 	public void setSign(String sign) {
 		this.sign = sign;
-	}
-
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "TMenu")
-	public Set<UserMenuRelation> getUserMenuRelations() {
-		return this.UserMenuRelation;
-	}
-
-	public void setTUserMenuRelations(Set<UserMenuRelation> UserMenuRelation) {
-		this.UserMenuRelation = UserMenuRelation;
 	}
 
 }

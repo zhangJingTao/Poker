@@ -65,6 +65,10 @@
 			<name>Spring Maven MILESTONE Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
 		</repository>
+			<repository>
+			<id>fastjson</id>
+			<url>http://repo1.maven.org/maven2/com/alibaba/fastjson/</url>
+			</repository>
 	</repositories>
 
 	<!-- 设定插件仓库 如有Nexus私服, 取消注释并指向正确的服务器地址. 
@@ -382,6 +386,21 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+		<!-- Spring data jRedis end -->
+		<!-- fastJson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.39</version>
+		</dependency>
+		<!-- fastJson end -->
+		<!-- jackson -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<!-- jackson -->
 	</dependencies>
 	
 	<dependencyManagement>

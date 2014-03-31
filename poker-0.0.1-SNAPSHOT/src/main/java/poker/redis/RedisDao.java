@@ -30,6 +30,14 @@ public  class RedisDao {
 		}
 	}
 	
+	public static void putValue(Object key,final Serializable value){
+		try {
+			template.opsForValue().set(key, value);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public Object getValue(Object key){
 		try {
 			return template.opsForValue().get(key);

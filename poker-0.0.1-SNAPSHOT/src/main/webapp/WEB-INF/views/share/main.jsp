@@ -4,7 +4,7 @@
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <html>
 <head>
-<title>main Page</title>
+<title>&nbsp;main Page</title>
 <jsp:include page="/static/include/login_include.jsp"></jsp:include>
 </head>
 

@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
@@ -30,6 +31,10 @@ public class ApplicationInit {
 	MenuService menuService;
 	@Autowired
 	UserMenuRelationService relationService;
+	
+	@Value(value="${webapp}")
+	String webapp;
+	
 	RedisDao redisDao = new RedisDao();
 
 	
@@ -69,6 +74,8 @@ public class ApplicationInit {
 		redisDao.putValue(RedisConstant.TEST_JSON_KEY_LARGE, generateList(1000000));
 		redisDao.putValue(RedisConstant.TEST_JSON_KEY_MEDIUM, generateList(100000));
 		redisDao.putValue(RedisConstant.TEST_JSON_KEY_SMALL, generateList(1000));
+		redisDao.putValue("webapp", "poker");
+		
 		log.info("finish init application redis data");
 		checkRedisIsOK();
 	}

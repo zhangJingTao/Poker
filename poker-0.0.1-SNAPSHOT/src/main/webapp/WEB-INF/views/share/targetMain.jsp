@@ -1,39 +1,31 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="redis" uri="/user/redis" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 
 <html>
 <head>
 	<title>&nbsp;Main Page</title>
 	<jsp:include page="/static/include/login_include.jsp"></jsp:include>
+    <link rel="stylesheet" href="/<redis:getValue key="webapp" />/static/main/css/style.css" media="screen" type="text/css" />
 </head>
-
 <body>
-	<div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span1">
-		</div>
-		<div class="span11">
-			<dl>
-				<dt>
-					所有的数据都在redis里
-				</dt>
-				<dt>
-					这只是一个随兴的演示框架，正如导航栏里所列，将会有这些功能以及更多。看起来很美好的样子，苦于思考却没时间去实现，只能一点一点的填坑。
-				</dt>
-				<dt>
-					距离上次提交GitHub又有一个多月了。
-				</dt>
-				<dt>
-					暂时不想罗列太多技术....以至于臃肿,并且还会耗费大量时间，全凭喜好
-				</dt>
-				<dt>
-					唯一庆幸的是，这个项目从开始到现在没有偏离我最初的想法，so...我会继续写下去的。
-				</dt>
-			</dl>
-		</div>
-	</div>
-</div>
+<canvas id="text" width="500" height="100"></canvas>
+<canvas id="stage" width="500" height="100"></canvas>
+<form id="form">
+    <input type="text" id="inputText" value="Poker" />
+    <input type="submit" value="TRY IT" />
+</form>
+  <script src="/<redis:getValue key="webapp" />/static/main/js/EasePack.min.js"></script>
+  <script src="/<redis:getValue key="webapp" />/static/main/js/TweenLite.min.js"></script>
+  <script src="/<redis:getValue key="webapp" />/static/main/js/easeljs-0.7.1.min.js"></script>
+  <script src="/<redis:getValue key="webapp" />/static/main/js/requestAnimationFrame.js"></script>
+  <script src="/<redis:getValue key="webapp" />/static/main/js/index.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//$("#form").submit();
+	});
+</script>
 </body>
 </html>

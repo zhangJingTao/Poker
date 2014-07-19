@@ -13,7 +13,27 @@
 	<script>
 		$(document).ready(function() {
 			$("#loginForm").validate();
+			
+			
 		});
+		
+		document.onkeydown = function(event) {
+			var target, code, tag;
+			if (!event) {
+				event = window.event; //针对ie浏览器  
+				target = event.srcElement;
+				code = event.keyCode;
+				if (code == 13) {
+					submitLogin();
+				}
+			} else {
+				target = event.target; //针对遵循w3c标准的浏览器，如Firefox  
+				code = event.keyCode;
+				if (code == 13) {
+					submitLogin();
+				}
+			}
+		};
 	</script>
 </head>
 
@@ -44,7 +64,7 @@
 	%>
 	<div class="Logincontainer">
 		<div class="login">
-			<div class="login-screen">
+			<div class="login-screen" style="width:81%">
 				<div class="login-icon">
 					<img src="${ctx }/static/flatUI/images/icons/png/Watches.png" alt="Welcome to Poker" />
 					<h4></h4>
@@ -67,6 +87,7 @@
 					</div> -->
 					<a class="btn btn-primary btn-lg btn-block" href="javascript:void(0)" onclick="submitLogin()">Login</a> <a
 						class="login-link" href="#"></a>
+						<a href="/register">注册</a>
 				</div>
 			</div>
 		</div>

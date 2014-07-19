@@ -9,42 +9,5 @@
 </head>
 
 <body>
-	
-	<!-- <div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span1">
-		</div>
-		<div class="span11">
-			<dl>
-				<dt>
-					redis || memcached
-				</dt>
-				<dd>
-					xxxx
-				</dd>
-				<dt>
-					修正UI+logout
-				</dt>
-				<dd>
-				</dd>
-				<dd>
-					写几个经典页面
-				</dd>
-				<dt>
-					翻页...list....tab
-				</dt>
-				<dd>
-					xxxxx
-				</dd>
-				<dt>
-					权限设定
-				</dt>
-				<dd>
-					菜单+权限，没有就太简陋了...。
-				</dd>
-			</dl>
-		</div>
-	</div>
-</div> -->
 </body>
 </html>

@@ -71,9 +71,9 @@ public class ApplicationInit {
 		log.info("            :r2. rMBGBMGi .7Y, 1i::i   vO0PMNNSXXEqP@Secbone.");
 		log.info("            .i1r. .jkY,    vE. iY....  20Fq0q5X5F1S2F22uuv1M");
 		log.info("start init application redis data");
-		redisDao.putValue(RedisConstant.TEST_JSON_KEY_LARGE, generateList(1000000));
-		redisDao.putValue(RedisConstant.TEST_JSON_KEY_MEDIUM, generateList(100000));
-		redisDao.putValue(RedisConstant.TEST_JSON_KEY_SMALL, generateList(1000));
+//		redisDao.putValue(RedisConstant.TEST_JSON_KEY_LARGE, generateList(1000000));
+//		redisDao.putValue(RedisConstant.TEST_JSON_KEY_MEDIUM, generateList(100000));
+//		redisDao.putValue(RedisConstant.TEST_JSON_KEY_SMALL, generateList(1000));
 		redisDao.putValue("webapp", "poker");
 		
 		log.info("finish init application redis data");

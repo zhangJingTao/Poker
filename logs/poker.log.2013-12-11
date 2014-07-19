@@ -1,0 +1,85 @@
+2013-12-11 11:05:01,898 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:05:02,162 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:05:02,162 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select task0_.id as id0_, task0_.description as descript2_0_, task0_.title as title0_, task0_.user_id as user4_0_ from t_task task0_ [42102-170]
+2013-12-11 11:05:02,277 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:05:02,327 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:05:02,328 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select count(*) as col_0_0_ from t_task task0_ where task0_.user_id=? [42102-170]
+2013-12-11 11:05:02,596 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:11:45,098 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:11:45,336 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:11:45,337 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select task0_.id as id0_, task0_.description as descript2_0_, task0_.title as title0_, task0_.user_id as user4_0_ from t_task task0_ [42102-170]
+2013-12-11 11:11:45,454 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:11:45,509 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:11:45,509 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select count(*) as col_0_0_ from t_task task0_ where task0_.user_id=? [42102-170]
+2013-12-11 11:11:45,760 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:13:47,668 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:13:47,906 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:13:47,907 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select task0_.id as id0_, task0_.description as descript2_0_, task0_.title as title0_, task0_.user_id as user4_0_ from t_task task0_ [42102-170]
+2013-12-11 11:13:48,029 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:13:48,088 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:13:48,088 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select count(*) as col_0_0_ from t_task task0_ where task0_.user_id=? [42102-170]
+2013-12-11 11:13:48,368 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:17:59,904 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:18:00,205 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:18:00,205 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select task0_.id as id0_, task0_.description as descript2_0_, task0_.title as title0_, task0_.user_id as user4_0_ from t_task task0_ [42102-170]
+2013-12-11 11:18:00,316 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:18:00,379 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 42102, SQLState: 42S02
+2013-12-11 11:18:00,379 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table "T_TASK" not found; SQL statement:
+select count(*) as col_0_0_ from t_task task0_ where task0_.user_id=? [42102-170]
+2013-12-11 11:18:00,632 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:21:36,601 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:21:36,865 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:21:36,865 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_user' doesn't exist
+2013-12-11 11:21:36,978 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:21:37,040 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:21:37,040 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:21:37,304 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:22:53,215 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:22:53,496 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:22:53,496 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:22:53,609 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:22:53,672 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:22:53,672 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:22:53,919 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:25:28,743 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:25:29,003 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:25:29,003 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_user' doesn't exist
+2013-12-11 11:25:29,117 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:25:29,183 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:25:29,183 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:25:29,450 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:29:31,686 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:29:31,954 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:29:31,954 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_user' doesn't exist
+2013-12-11 11:29:32,070 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:29:32,134 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:29:32,134 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:29:32,407 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:30:17,052 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:30:17,327 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:30:17,328 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_user' doesn't exist
+2013-12-11 11:30:17,449 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:30:17,501 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:30:17,501 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:30:17,699 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:31:38,706 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:31:38,976 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:31:38,976 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:31:39,090 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:31:39,156 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:31:39,156 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:31:39,401 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-12-11 11:32:18,282 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:32:18,615 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:32:18,615 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_user' doesn't exist
+2013-12-11 11:32:18,727 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-11 11:32:18,778 [main] WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - SQL Error: 1146, SQLState: 42S02
+2013-12-11 11:32:18,778 [main] ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] - Table 'poker.t_task' doesn't exist
+2013-12-11 11:32:19,033 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户

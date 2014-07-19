@@ -1,0 +1,5 @@
+2013-12-10 14:33:33,788 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-10 14:33:34,200 [main] INFO  [poker.repository.JpaMappingTest] - ok: Task
+2013-12-10 14:33:34,210 [main] INFO  [poker.repository.JpaMappingTest] - ok: User
+2013-12-10 14:33:34,332 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-12-10 14:33:34,713 [main] WARN  [poker.service.account.AccountService] - 操作员foo尝试删除超级管理员用户

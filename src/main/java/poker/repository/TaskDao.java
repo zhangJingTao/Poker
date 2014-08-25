@@ -10,9 +10,9 @@ import poker.entity.Task;
 
 public interface TaskDao extends PagingAndSortingRepository<Task, Long>, JpaSpecificationExecutor<Task> {
 
-	Page<Task> findByUserId(Long id, Pageable pageRequest);
+    Page<Task> findByUserId(Long id, Pageable pageRequest);
 
-	@Modifying
-	@Query("delete from Task task where task.user.id=?1")
-	void deleteByUserId(Long id);
+    @Modifying
+    @Query("delete from Task task where task.user.id=?1")
+    void deleteByUserId(Long id);
 }

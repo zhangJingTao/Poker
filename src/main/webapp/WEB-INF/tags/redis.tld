@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
-  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
 
 <taglib>
 
-  <tlib-version>1.0</tlib-version>
-  <jsp-version>1.2</jsp-version>
-  <short-name>redisTag</short-name>
-  <uri>/user/redis</uri>
-  <description>Redis tag lib.</description>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>redisTag</short-name>
+    <uri>/user/redis</uri>
+    <description>Redis tag lib.</description>
 
-  <tag>
-    <name>getValue</name>
-    <tag-class>poker.redis.RedisTag</tag-class>
-    <body-content>JSP</body-content>
-    <description>get value from Redis
-    </description>
-    <attribute>
-      <name>key</name>
-      <required>true</required>
-      <rtexprvalue>true</rtexprvalue>
-    </attribute>
-  </tag>
+    <tag>
+        <name>getValue</name>
+        <tag-class>poker.redis.RedisTag</tag-class>
+        <body-content>JSP</body-content>
+        <description>get value from Redis
+        </description>
+        <attribute>
+            <name>key</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
 </taglib>

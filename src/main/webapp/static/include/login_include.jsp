@@ -1,9 +1,9 @@
 <%
-	String path = request.getContextPath();
-	String contentPath = request.getScheme() + "://"
-	        + request.getServerName() + ":" + request.getServerPort()
-	        + path;
-	request.setAttribute("contentPath", contentPath);
+    String path = request.getContextPath();
+    String contentPath = request.getScheme() + "://"
+            + request.getServerName() + ":" + request.getServerPort()
+            + path;
+    request.setAttribute("contentPath", contentPath);
 %>
 
 <script src="${contentPath }/static/flatUI/js/jquery-1.8.3.min.js"></script>
@@ -22,7 +22,7 @@
 
 
 <link type="image/x-icon" href="${contentPath}/static/images/favicon.ico" rel="shortcut icon">
-<link href="${contentPath}/static/jquery-validation/1.10.0/validate.css" type="text/css" rel="stylesheet" />
-<link href="${contentPath}/static/styles/default.css" type="text/css" rel="stylesheet" />
+<link href="${contentPath}/static/jquery-validation/1.10.0/validate.css" type="text/css" rel="stylesheet"/>
+<link href="${contentPath}/static/styles/default.css" type="text/css" rel="stylesheet"/>
 <script src="${contentPath}/static/jquery-validation/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
 <script src="${contentPath}/static/jquery-validation/1.10.0/messages_bs_zh.js" type="text/javascript"></script>

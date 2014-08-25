@@ -1,68 +1,66 @@
 package poker.test;
 
-import java.io.Serializable;
-
 import poker.entity.Menu;
 import poker.entity.User;
 
-public class SerializableVO implements Serializable{
-	private static final long serialVersionUID = -6109590619136943215L;
+import java.io.Serializable;
 
-	private Integer intValue;
-	private String strValue;
-	private Long longValue;
-	private Menu menu;
-	private User user;
-	
-	public SerializableVO(Integer intValue,String strValue,Long longValue,Menu menu,User user){
-		this.intValue = intValue;
-		this.strValue = strValue;
-		this.longValue = longValue;
-		this.menu = menu;
-		this.user = user;
-	}
+public class SerializableVO implements Serializable {
+    private static final long serialVersionUID = -6109590619136943215L;
 
-	public Integer getIntValue() {
-		return intValue;
-	}
+    private Integer intValue;
+    private String strValue;
+    private Long longValue;
+    private Menu menu;
+    private User user;
 
-	public void setIntValue(Integer intValue) {
-		this.intValue = intValue;
-	}
+    public SerializableVO(Integer intValue, String strValue, Long longValue, Menu menu, User user) {
+        this.intValue = intValue;
+        this.strValue = strValue;
+        this.longValue = longValue;
+        this.menu = menu;
+        this.user = user;
+    }
 
-	public String getStrValue() {
-		return strValue;
-	}
+    public Integer getIntValue() {
+        return intValue;
+    }
 
-	public void setStrValue(String strValue) {
-		this.strValue = strValue;
-	}
+    public void setIntValue(Integer intValue) {
+        this.intValue = intValue;
+    }
 
-	public Long getLongValue() {
-		return longValue;
-	}
+    public String getStrValue() {
+        return strValue;
+    }
 
-	public void setLongValue(Long longValue) {
-		this.longValue = longValue;
-	}
+    public void setStrValue(String strValue) {
+        this.strValue = strValue;
+    }
 
-	public Menu getMenu() {
-		return menu;
-	}
+    public Long getLongValue() {
+        return longValue;
+    }
 
-	public void setMenu(Menu menu) {
-		this.menu = menu;
-	}
+    public void setLongValue(Long longValue) {
+        this.longValue = longValue;
+    }
 
-	public User getUser() {
-		return user;
-	}
+    public Menu getMenu() {
+        return menu;
+    }
 
-	public void setUser(User user) {
-		this.user = user;
-	}
-	
-	
-	
-	
+    public void setMenu(Menu menu) {
+        this.menu = menu;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+
 }
